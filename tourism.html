@@ -14,9 +14,12 @@
   <style>
     img {
       width: 500px;
-      height: 600px;
+      height: auto;
     }
     .heading {
+      text-align: center;
+    }
+    #contentDesc {
       text-align: center;
     }
   </style>
@@ -25,6 +28,11 @@
 <body>
 
   <div class="container">
+
+    <div class="text-center d-none d-md-block">
+      <img src="Pictures/logo_sm.jpg" alt="small ME logo"/>
+    </div>
+
     <!--OffCanvas Menu start-->
     <button class="btn btn-success d-block d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Menu</button>
 
@@ -65,8 +73,21 @@
       </li>
     </ul>
     <!-- Main Menu End-->
+
+    <div class="text-center d-block d-md-none">
+      <img src="Pictures/logo_sm.jpg" alt="small ME logo" class="rounded"/>
+    </div>
     
     <h1 class="heading text-success"> Tourism in Iceland </h1>
+
+    <div class="m-5 d-block d-md-none">
+      <h4 class="heading"> Important Places </h4>
+      <p> Iceland's natural features make it a popular tousrist destination. The main city people visit is the capital city, Reykjavík. Believed to be the first permanent settlements in Iceland. Reykjavík is the center of Iceland's cultural, economic and governmental activity. Reykjavík is known to be one of the greenest, safest cities in the world.</p>
+      <h4 class="heading"> Famous Landmarks </h4>
+      <p> Vatnajökull National Park is a protected wilderness area in Iceland, it is centered around the Vatnajökull glacier. The park covers 14,141 square kilometers, this takes up 14% of the countires total area. The national park includes volcanoes, glaciers, waterfalls, lagoons, mountains and more making it a main travel destination. </p>
+      <h4 class="heading"> Natural Features </h4>
+      <p> Iceland offers an endless amount of fantastic natural features. Some of them being volcanoes, glaciers, hot springs, lagoons, waterfalls. </p>
+    </div>
 
     <div id="carouselIceland" class="carousel slide" data-bs-ride="false">
             
@@ -80,7 +101,7 @@
       <div class="carousel-inner">
 
         <div class="carousel-item active">
-          <img src="Pictures/icelandBlueLagoon.jpg" class="d-block w-100" alt="Blue Lagoon in Iceland">
+          <img src="Pictures/icelandBlueLagoon.jpg" class="d-block w-100" alt="Blue Lagoon in Iceland" id="slideshow">
           <div class="carousel-caption d-none d-md-block">
             <h5>Blue Lagoon</h5>
             <p>A popular destination for tourists. The blue lagoon offers many health benefits!</p>
@@ -124,12 +145,23 @@
 
     </div><!--Carousel End-->
 
-    <div class="m-5">
-      <h4 class="heading"> Important Places </h4>
-      <p> Iceland's natural features make it a popular tousrist destination. The main city people visit is the capital city, Reykjavík. Believed to be the first permanent settlements in Iceland. Reykjavík is the center of Iceland's cultural, economic and governmental activity. Reykjavík is known to be one of the greenest, safest cities in the world.</p>
-      <p> Vatnajökull National Park is a protected wilderness area in Iceland, it is centered around the Vatnajökull glacier. The park covers 14,141 square kilometers, this takes up 14% of the countires total area. The national park includes volcanoes, glaciers, waterfalls, lagoons, mountains and more making it a main travel destination. </p>
-    </div>
-
   </div><!--Container End-->
+
+  <div class="container mt-5 d-none d-md-block" id="contentDesc">
+    <div class="row text-center">
+      <div class="col">
+        <h4 class="heading"> Important Places </h4>
+        <p> Iceland's natural features make it a popular tourist destination. The main city people visit is the capital city, Reykjavík. Believed to be the first permanent settlements in Iceland. Reykjavík is the center of Iceland's cultural, economic and governmental activity. Reykjavík is known to be one of the greenest, safest cities in the world.</p>
+      </div>
+      <div class="col">
+        <h4 class="heading"> Famous Landmarks </h4>
+        <p> Vatnajökull National Park is a protected wilderness area in Iceland, it is centered around the Vatnajökull glacier. The park covers 14,141 square kilometers, this takes up 14% of the countires total area. The national park includes volcanoes, glaciers, waterfalls, lagoons, mountains and more making it a main travel destination. </p>
+      </div>
+      <div class="col">
+        <h4 class="heading"> Natural Features </h4>
+        <p> Iceland offers an endless amount of fantastic natural features. Some of them being volcanoes, glaciers, hot springs, lagoons, waterfalls.  </p>
+      </div>
+    </div>
+  </div>
 
 </body>
