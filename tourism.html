@@ -14,9 +14,12 @@
   <style>
     img {
       width: 500px;
-      height: 600px;
+      height: auto;
     }
     .heading {
+      text-align: center;
+    }
+    #contentDesc {
       text-align: center;
     }
   </style>
@@ -25,6 +28,11 @@
 <body>
 
   <div class="container">
+
+    <div class="text-center d-none d-md-block">
+      <img src="Pictures/logo_sm.jpg" alt="small ME logo"/>
+    </div>
+
     <!--OffCanvas Menu start-->
     <button class="btn btn-success d-block d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Menu</button>
 
@@ -65,6 +73,10 @@
       </li>
     </ul>
     <!-- Main Menu End-->
+
+    <div class="text-center d-block d-md-none">
+      <img src="Pictures/logo_sm.jpg" alt="small ME logo" class="rounded"/>
+    </div>
     
     <h1 class="heading text-success"> Tourism in Iceland </h1>
 
@@ -89,7 +101,7 @@
       <div class="carousel-inner">
 
         <div class="carousel-item active">
-          <img src="Pictures/icelandBlueLagoon.jpg" class="d-block w-100" alt="Blue Lagoon in Iceland">
+          <img src="Pictures/icelandBlueLagoon.jpg" class="d-block w-100" alt="Blue Lagoon in Iceland" id="slideshow">
           <div class="carousel-caption d-none d-md-block">
             <h5>Blue Lagoon</h5>
             <p>A popular destination for tourists. The blue lagoon offers many health benefits!</p>
